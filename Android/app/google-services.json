@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "516430799750",
+    "firebase_url": "https://tvseries-374ba.firebaseio.com",
+    "project_id": "tvseries-374ba",
+    "storage_bucket": "tvseries-374ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516430799750:android:7082c962eca0f13e2d0207",
+        "android_client_info": {
+          "package_name": "hu.bme.aut.tvseries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516430799750-pruppu8ho47ardsdda8d3ufdkl1jt3kb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hu.bme.aut.tvseries",
+            "certificate_hash": "bcb4a931696900b4d086cfda64aa07f30b08d318"
+          }
+        },
+        {
+          "client_id": "516430799750-0haffek4asdpp5kr63p7san6853978jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7zY9aDF9Rs3e0bIDGKIIe-iltVYw0hDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516430799750-0haffek4asdpp5kr63p7san6853978jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

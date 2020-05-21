@@ -7,19 +7,66 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="hu.bme.aut.tvseries.ui.home.HomeFragment"
+        android:name="hu.bme.aut.tvseries.ui.fragment.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_newSeriesFragment"
+            app:destination="@id/newSeriesFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="hu.bme.aut.tvseries.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_search"
+        android:name="hu.bme.aut.tvseries.ui.fragment.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_search_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="hu.bme.aut.tvseries.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_userinfo"
+        android:name="hu.bme.aut.tvseries.ui.fragment.UserFragment"
+        android:label="@string/title_user"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_navigation_userinfo_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="hu.bme.aut.tvseries.ui.fragment.DetailsFragment"
+        android:label="details"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailsFragment_to_newEpisodeFragment"
+            app:destination="@id/newEpisodeFragment" />
+        <action
+            android:id="@+id/action_detailsFragment_to_newCastFragment"
+            app:destination="@id/newCastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newSeriesFragment"
+        android:name="hu.bme.aut.tvseries.ui.fragment.NewSeriesFragment"
+        android:label="Create Series"
+        tools:layout="@layout/fragment_new_series">
+        <action
+            android:id="@+id/action_newSeriesFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newEpisodeFragment"
+        android:name="hu.bme.aut.tvseries.ui.fragment.NewEpisodeFragment"
+        android:label="New Episode"
+        tools:layout="@layout/fragment_new_episode" />
+
+    <fragment
+        android:id="@+id/newCastFragment"
+        android:name="hu.bme.aut.tvseries.ui.fragment.NewCastFragment"
+        android:label="New Cast"
+        tools:layout="@layout/fragment_new_cast" />
 </navigation>

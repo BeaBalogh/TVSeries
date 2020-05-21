@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+  db:
+    image: mysql
+    restart: always
+    volumes:
+    - ./mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_DATABASE: mysql
+      MYSQL_PASSWORD: root
+    ports:
+    - "3306:3306"
