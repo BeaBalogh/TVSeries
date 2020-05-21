@@ -101,8 +101,8 @@ class SeriesService(val seriesRepository: SeriesRepository,
 
     fun deleteEpisode(id: Long, season_number: Int, episode_number: Int): Boolean {
         val series = seriesRepository.findFirstByApiId(id) ?: this.createSeries(id)
-        series?.let{series ->
-        seasonRepository.findBySeriesAndNumber(series, season_number)?.let { season ->
+        series?.let{s ->
+        seasonRepository.findBySeriesAndNumber(s, season_number)?.let { season ->
             episodeRepository.findBySeasonAndNumber(season, episode_number)?.let { episode ->
                 episodeRepository.delete(episode)
                 return true
@@ -124,11 +124,11 @@ fun getRatings(id: Long): List<RatingDTO> {
 fun postRating(id: Long, dto: RatingDTO): RatingDTO? {
     userService.getUserByEmail(dto.userID)?.let { user ->
         val series = seriesRepository.findFirstByApiId(id) ?: this.createSeries(id)
-        series?.let { series ->
+        series?.let { s ->
             val rating = Rating()
-            rating.dtoToEntity(dto, series, user)
+            rating.dtoToEntity(dto, s, user)
             user.ratings.add(rating)
-            series.ratings.add(rating)
+            s.ratings.add(rating)
             ratingRepository.save(rating)
             return rating.entityToDTO()
         }
