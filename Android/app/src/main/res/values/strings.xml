@@ -30,6 +30,9 @@
     <string name="followed">Followed</string>
     <string name="watched">Watched</string>
     <string name="season_1">Season 1</string>
+    <string name="top_rated">Top rated</string>
+    <string name="popular">Popular</string>
+    <string name="latest">Latest</string>
     <string-array name="pegi_arrays">
         <item>0+</item>
         <item>6+</item>

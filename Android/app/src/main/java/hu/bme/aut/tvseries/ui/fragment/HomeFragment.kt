@@ -42,9 +42,9 @@ class HomeFragment : Fragment(), SeriesCardAdapter.SeriesItemClickListener {
         viewModel = vm
         loadSeries()
         observeViewModel()
-        val latestSeries: RecyclerView = root.findViewById(R.id.list_series)
-        val popularSeries: RecyclerView = root.findViewById(R.id.top_list_series)
-        val topSeries: RecyclerView = root.findViewById(R.id.top_rated_list_series)
+        val latestSeries: RecyclerView = root.findViewById(R.id.latest_series)
+        val popularSeries: RecyclerView = root.findViewById(R.id.popular_series)
+        val topSeries: RecyclerView = root.findViewById(R.id.top_series)
         val btnCreateShow: Button = root.findViewById(R.id.btnNewShow)
 
 

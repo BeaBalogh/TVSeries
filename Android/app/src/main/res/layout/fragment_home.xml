@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:text="Top"
+            android:text="@string/popular"
             android:textColor="@color/colorText"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
-            android:id="@+id/top_list_series"
+            android:id="@+id/popular_series"
             layout="@layout/list_card_series"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,16 +43,16 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Top rated"
+            android:text="@string/top_rated"
             android:textColor="@color/colorText"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/top_list_series" />
+            app:layout_constraintTop_toBottomOf="@+id/popular_series" />
 
         <include
-            android:id="@+id/top_rated_list_series"
+            android:id="@+id/top_series"
             layout="@layout/list_card_series"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,17 +70,17 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Top rated "
+            android:text="@string/latest"
             android:textColor="@color/colorText"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/top_rated_list_series" />
+            app:layout_constraintTop_toBottomOf="@+id/top_series" />
 
         <include
-            android:id="@+id/list_series"
+            android:id="@+id/latest_series"
             layout="@layout/list_card_series"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
